@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.jaudiolibs</groupId>
+		<artifactId>jaudiolibs</artifactId>
+		<version>0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>jaudiolibs-audioservers-api</artifactId>
+	<version>${audioservers.version}</version>
+
+	<name>Audio Servers API</name>
+	<url>http://code.google.com/p/java-audio-utils/</url>
+	<description>The aim of this project is to provide a simple client-server callback model for audio IO, providing a minimal API that removes the need for audio processing code to have any knowledge of the underlying audio library.</description>
+
+	<build>
+
+		<plugins>
+
+			<!-- Generate NetBeans module manifest -->
+			<plugin>
+				<inherited>true</inherited>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>nbm-maven-plugin</artifactId>
+				<version>3.8.1</version>
+				<extensions>true</extensions>
+				<configuration>
+					<codeNameBase>org.jaudiolibs.audioservers</codeNameBase>
+					<publicPackages>
+						<value>org.jaudiolibs.audioservers</value>
+					</publicPackages>
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+	</build>
+</project>
