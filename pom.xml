@@ -14,10 +14,18 @@
 		<module>jaudiolibs-audioservers-api</module>
 		<module>jaudiolibs-audioservers-javasound</module>
 		<module>jaudiolibs-audioservers-jack</module>
+
+		<module>jaudiolibs-audiopipes-api</module>
+		<module>jaudiolibs-audiopipes-impl</module>
+
+		<module>jaudiolibs-audioops-api</module>
+		<module>jaudiolibs-audioops-impl</module>
 	</modules>
 
 	<properties>
 		<audioservers.version>0.1-SNAPSHOT</audioservers.version>
+		<audiopipes.version>0.1-SNAPSHOT</audiopipes.version>
+		<audioops.version>0.1-SNAPSHOT</audioops.version>
 
 		<jnajack.version>0.1-SNAPSHOT</jnajack.version>
 	</properties>
